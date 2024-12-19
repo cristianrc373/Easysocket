@@ -1,14 +1,14 @@
 # Easysocket 🔐
-Modulo compilado para python que permite crear comunicaciones sokcet con cifrado asimetrico integrando el modulo pycript
+Modulo compilado para python que permite crear comunicaciones sokcet con cifrado asimétrico integrando el módulo pycript
 
 ## !ATENCIÓN!
-No se deben cambiar los nombres de los ficheros, a pesar de tener unos nombres un tanto particulares podemos importar los modulos simplemente con
+No se deben cambiar los nombres de los ficheros, a pesar de tener unos nombres un tanto particulares podemos importar los módulos simplemente con
 ### <sup>import easysocket, pycript</sup>
-Con la condición de que estos sean accesibles (ubicados en la carpetad e librerias python) o se encuentren en mismo direcctorio que el script/programa al que las vamos a importar.
+Con la condición de que estos sean accesibles (ubicados en la carpeta de librerias python) o que se encuentren en mismo direcctorio que el script/programa al que las vamos a importar.
 
 ### ¿Como funciona?
-Easysocekt tiene un funcinamiento simple para el usuario, está diseñado para enviar datos encriptados desde un cliente (cifrando con clave pública) a un servidor (descifrando los datos con su clave privada),
-esto permite una mayor seguridad en las comunicaciones. No debes preocuparnos por el 'buffer' empleado en el socket ya que este se negocia de forma automatica con cliente/servidor para que no lo tengas que hacer tu.
+Easysocekt tiene un funcionamiento simple para el usuario, está diseñado para enviar datos encriptados desde un cliente (cifrando con clave pública) a un servidor (descifrando los datos con su clave privada),
+esto permite una mayor seguridad en las comunicaciones. No debes preocuparte por el 'buffer' empleado en el socket ya que este se negocia de forma automática con cliente/servidor para que no lo tengas que hacer tu.
 Los protocolos empleados para seguir una comunicación sincrona entre cliente/servidor son los siguientes:
 
   HELO --> Iniciar comunicacion con servidor
@@ -21,15 +21,15 @@ Los protocolos empleados para seguir una comunicación sincrona entre cliente/se
   
   KEY NOT FOUND --> Respuesta del servidor tras un HELO para indicar al cliente que no dispone de la clave publica
   
-  OK --> La recepción de datos feu exitosa y se puede continuar
+  OK --> La recepción de datos fue exitosa y se puede continuar
   
-  ~~ERROR~~--> Error en la recepciond e datos (No implementado)
+  ~~ERROR~~--> Error en la recepcion de datos (No implementado)
   
-  MSG --> Indica que el proximo paquete son datos (No se indica en la ayuda de la clase)
+  MSG --> Indica que el próximo paquete es de datos (No se indica en la ayuda de la clase)
   
 
 ### __MODO SERVER__
-Por defecto para el servidor se escucharán todos los hosts en el puerto 50500 con un maximo de 5 host por puerto simultaneos.
+Por defecto para el servidor se escucharán todos los hosts en el puerto 50500 con un máximo de 5 host por puerto simultáneos.
 
 ### __MODO CLIENTE__
 Para usar este modo se deben pasar los parametros 'host' como ip/nombre
@@ -39,4 +39,4 @@ Los parametros opcionales de esta función son "renew_query", por defecto False
 y evita que nos pregunte si queremos renovar la clave publica del servidor (se renovará siempre).
 El parametro "port", como su nombre indica es el puerto en "int" al cual vamos a conectarnos.
 
-## Para mas información sobre pycript visite 
+## Para mas información sobre *pycript* visite 
