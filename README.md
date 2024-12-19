@@ -3,7 +3,11 @@ Modulo compilado para python que permite crear comunicaciones sokcet con cifrado
 
 ## !ATENCIÓN!
 No se deben cambiar los nombres de los ficheros, a pesar de tener unos nombres un tanto particulares podemos importar los módulos simplemente con
-### <sup>import easysocket, pycript</sup>
+
+<sup>import easysocket, pycript</sup>
+
+*Por defecto easysocket importa pycript*
+
 Con la condición de que estos sean accesibles (ubicados en la carpeta de librerias python) o que se encuentren en mismo direcctorio que el script/programa al que las vamos a importar.
 
 ### ¿Como funciona?
