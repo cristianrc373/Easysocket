@@ -57,6 +57,19 @@ sock.init_server()
 ```python
 from easysocket import *
 
-sock=Easysocket()
+sock = Easysocket()
 sock.client("127.0.0.1","hola mundo")
+```
+·Crear objeto con valores personalizados-->
+```python
+from easysocket import *
+#Configurarión que solo afecta al servidor
+sock = Easysocket(host="127.0.0.1", port=8888, listen_bind=10) #Solo se permite el acceso a localhost por el puerto 8888 con 10 conexiones simultáneas
+```
+·Configurar cliente par envío de datos a servidor personalizado-->
+```python
+from easysocket import *
+#Configurarión que solo afecta al cliente
+sock = Easysocket()
+sock.client(host="127.0.0.1", port=8888, renew_query=True, [123, "Hola mundo"]) #Sen envian los datos a un servidor localhost puerto 8888 y si ya tenemos la clave pública nos pregunta si queremos renovarla
 ```
