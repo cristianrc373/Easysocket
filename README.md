@@ -44,3 +44,19 @@ y evita que nos pregunte si queremos renovar la clave publica del servidor (se r
 El parametro "port", como su nombre indica es el puerto en "int" al cual vamos a conectarnos.
 
 ## Para mas información sobre *pycript* visite 
+
+### Ejemplos de código
+·Iniciar servidor-->
+```python
+from easysocket import *
+
+sock = Easysocket()
+sock.init_server()
+```
+·Iniciar cliente y mandar datos-->
+```python
+from easysocket import *
+
+sock=Easysocket()
+sock.client("127.0.0.1","hola mundo")
+```
