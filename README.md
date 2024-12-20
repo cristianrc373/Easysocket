@@ -43,7 +43,7 @@ Los parametros opcionales de esta función son "renew_query", por defecto False
 y evita que nos pregunte si queremos renovar la clave publica del servidor (se renovará siempre).
 El parametro "port", como su nombre indica es el puerto en "int" al cual vamos a conectarnos.
 
-## Para mas información sobre *pycript* visite [pycript]()
+## Para mas información sobre *pycript* visite [pycript](https://github.com/cristianrc373/Pycript)
 ### Ejemplos de código
 ·Iniciar servidor-->
 ```python
